@@ -14,7 +14,7 @@ class UserService {
 
     createUser(name, email, age, bod) {
         const id = `Data ${userCounter++}`
-        const user = new User(id, nama, email, ages, bod);
+        const user = new User(id, name, email, age, bod);
         return UserRepositories.create(user);
     }
 
